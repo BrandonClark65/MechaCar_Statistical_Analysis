@@ -18,3 +18,14 @@ The design specifications for the MechaCar suspension coils dictate that the var
 
 However, when breaking down the data further and grouping by lot, we can see that Lot3 has a psi variance of 170.29, which is far over the design specifications. 
 ![lot summary](Images/lot_summary_table.png)
+
+### T-Tests on Suspension Coils
+I ran t-tests to determine if the suspension coils of all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 psi.
+The t-test comparing all manufacturing lots to the population mean returned a p-value of 0.06, which using a significance level of 0.05 means we cannot reject the null hypothesis that the PSI of all lots is the same as the population mean.
+![ttest-whole](Images/ttest_whole.png)
+The t-test comparing Lot1 to the population mean returned a p-value of 1, which means we cannot reject the null hypothesis that the PSI of all lots is the same as the population mean.
+![ttest-lot1](Images/ttest_lot1.png)
+The t-test comparing Lot2 to the population mean returned a p-value of 0.6072, which means we cannot reject the null hypothesis that the PSI of all lots is the same as the population mean.
+![ttest-lot2](Images/ttest_lot2.png)
+The t-test comparing Lot3 to the population mean returned a p-value of 0.04168, which means we can reject the null hypothesis that the PSI of all lots is the same as the population mean. This means that the true mean of Lot3 PSI is significantly different from the population mean of 1500.
+![ttest-lot3](Images/ttest_lot3.png)
