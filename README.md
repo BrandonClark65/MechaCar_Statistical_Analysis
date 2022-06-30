@@ -30,6 +30,8 @@ The t-test comparing Lot2 to the population mean returned a p-value of 0.6072, w
 The t-test comparing Lot3 to the population mean returned a p-value of 0.04168, which means we can reject the null hypothesis that the PSI of all lots is the same as the population mean. This means that the true mean of Lot3 PSI is significantly different from the population mean of 1500.
 ![ttest-lot3](Images/ttest_lot3.png)
 
-## Summary
+## Analysis Summary
 Based on the t-test results as well as the observed PSI variance happening at Lot3, I would recommend that a further, deaper analysis be carried out on Lot3 top see what is causing the cars from that location to be faulty.
 
+## Study Design: MechaCar vs Competition
+I would like to compare the cost, overall fuel efficiency, and safety rating of MechaCar vehicles with those of its competitors. I believe these will be the most useful metrics to compare because they are the numbers that consumers most look at when buying a new car. I would perform an ANOVA test for each metric comparing it to the same metric of multiple competitors. For this test the null hypothesis would be that the metric is equal for all companies. The alternate hypothesis would be that at least one of the companies is different from all the others. Using an ANOVA would allow us to see how the metrics of the MechaCar vehicles stack up agains multiple competitors. If the null hypothesis is rejected, we can then perform further t-tests with individual competitors to see if the MechaCars are significantly better, or worse. In order to run the ANOVA test we will need very large data sets from MechaCar as well as at least two competitors that contain cost, overall fuel efficiency , and safety ratings of their cars.  
