@@ -20,7 +20,12 @@ lm(mpg~vehicle_length+vehicle_weight+spoiler_angle+ground_clearance+AWD,data=mec
 summary(lm(mpg~vehicle_length+vehicle_weight+spoiler_angle+ground_clearance+AWD,data=mechacar_mpg))
 ```
 ```{r}
+# import suspension coil csv file
 suspension_coil_table <- read.csv(file = 'Suspension_Coil.csv', check.names = F, stringsAsFactors = F)
+```
+```{r}
+# Create total summary dataframe
+total_summary <- suspension_coil_table %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI))
 ```
 
 
