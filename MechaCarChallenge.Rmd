@@ -53,4 +53,10 @@ lot2 <- subset(suspension_coil_table, Manufacturing_Lot=='Lot2')
 # t test for Lot 2
 t.test(lot2$PSI,mu=1500)
 ```
+```{r}
+# Table containing just lot 3
+lot3 <- subset(suspension_coil_table, Manufacturing_Lot=='Lot3')
+# t test for Lot 3
+t.test(lot3$PSI,mu=1500)
+```
 
